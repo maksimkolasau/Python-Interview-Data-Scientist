@@ -4,16 +4,16 @@ class CoffeeShop:
     def __init__(self, coffee_price):
         self.coffee_price = coffee_price
 
-    # instance method
+    # instance method относится к конкретному экземпляру класса
     def make_coffee(self):
         print(f'Making {self.specialty} for ${self.coffee_price}')
 
-    # static method
+    # static method для служебных функций, никак не изменяет свойств класса или экземпляра
     @staticmethod
     def check_weather():
         print('Its sunny')
 
-    # class method
+    # class method принимает параметр cls и может изменять сам класс
     @classmethod
     def change_specialty(cls, specialty):
         cls.specialty = specialty

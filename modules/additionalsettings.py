@@ -1,8 +1,6 @@
 def makeitblue(func):
-
-    def bluecolor(color='Blue'):
-        print('Painting into Blue <3')
-        func(color='Blue')
+    def bluecolor(*args, **kwargs):
+        print('What Tesla combination do you like?')
+        func(*args, **kwargs)
 
     return bluecolor
-
