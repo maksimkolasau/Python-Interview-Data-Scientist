@@ -31,7 +31,7 @@ def f(x):
     return x ** 2
 
 
-d = [12, 23, 45, 67, 98]
+d = [4, 23, 45, 67, 98]
 e = list(map(f, d))
 print(e)
 
